@@ -6,12 +6,12 @@ export default function testimonial() {
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi itaque recusandae, officiis vero, quaerat animi tempore, maiores autem temporibus blanditiis laudantium quos molestiae sequi rem earum ex nihil fugiat pariatur!"</p>
                 <b>Man & Woman</b>
                 <div className="circle-icons">
-                    <i class="fa-regular fa-circle fa-sm"></i>
-                    <i class="fa-regular fa-circle fa-sm"></i>
-                    <i class="fa-regular fa-circle fa-sm"></i>
-                    <i class="fa-solid fa-circle fa-sm"></i>
-                    <i class="fa-regular fa-circle fa-sm"></i>
-                    <i class="fa-regular fa-circle fa-sm"></i>
+                    <i className="fa-regular fa-circle fa-sm"></i>
+                    <i className="fa-regular fa-circle fa-sm"></i>
+                    <i className="fa-regular fa-circle fa-sm"></i>
+                    <i className="fa-solid fa-circle fa-sm"></i>
+                    <i className="fa-regular fa-circle fa-sm"></i>
+                    <i className="fa-regular fa-circle fa-sm"></i>
                 </div>
             </section>
         </>

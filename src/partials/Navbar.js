@@ -18,7 +18,6 @@ export default function Navbar() {
             <header className="upHeader">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit neque odit quisquam exercitationem a voluptas ex ratione veniam iste officia, corrupti aliquid repudiandae veritatis quae facilis?</p>
             </header>
-
             <nav>
 
                 <div className="nav-header">
@@ -30,14 +29,17 @@ export default function Navbar() {
                     </div>
                     
 
-                    <div className="logo">
+                    <div className="logo" id="logo">
                         <img src={VecLogo} alt="logo" />
                     </div>
 
                     <div className="menu-button">
                         {/* <img src={VecLogo} alt="logo" /> */}
-                        <p className="profile"><i class="fa-regular fa-user"></i></p>
-                        <p><i class="fa-solid fa-cart-shopping"></i> 0</p>
+                        <p className="profile"><i className="fa-regular fa-user"></i></p>
+                        <p><i className="fa-solid fa-cart-shopping"></i> 0</p>
+                        <div className='question'>
+                            <i class="fa-regular fa-circle-question fa-2xl"></i>
+                        </div>
                     </div>
                 </div>
 

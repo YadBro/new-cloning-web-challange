@@ -1,7 +1,44 @@
+// import { useEffect, useState } from "react";
 import TopIMG from "../assets/images/1280x720.jpg";
 import productItem from "../assets/images/300x300.jpg";
 
 export default function Brand() {
+
+    // const [logo, setLogo]    = useState({
+    //     class: "fa-solid fa-truck fa-xl", 
+    //     text: "Delivery to PJ/KL (within 50km) Free delivery available*"
+    //     });
+    // const [number, setNumber] = useState(1);
+    // const array = [
+    //     {
+    //     class: "fa-solid fa-truck fa-xl", 
+    //     text: "Delivery to PJ/KL (within 50km) Free delivery available*"
+    //     },
+    //     {
+    //     class: "fa-regular fa-face-smile fa-xl", 
+    //     text: "Preorder Basis Freshness Guaranteed"
+    //     },
+    //     {
+    //     class: "fa-regular fa-heart fa-xl", 
+    //     text: "Finest Ingredients 100% Halal, No Alcohol"
+    //     },
+    //     {
+    //     class: "fa-solid fa-medal fa-xl", 
+    //     text: "Award Winning Chef Champion of 2016 Asian Pastry Cup"
+    //     }
+    //     ]
+
+    // useEffect(()=>{
+    //     if (window.matchMedia('(max-width: 425px)').matches){
+    //         setInterval(() => {
+    //             const random = Math.floor(Math.random() * 4);
+    //             setLogo(array[random]);
+    //         }, 5000);
+    //     }else if(window.matchMedia('(max-width: 768px)').matches){
+    //         setLogo(array[0]);
+    //     }
+    // }, 3000)
+
     return(
         <>
         <div className="content-header" style={{ position: 'relative' }}>
@@ -15,6 +52,12 @@ export default function Brand() {
         </div>
         <div className="superiority">
             <div className="superiority-main">
+                {/* {number &&(
+                <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="500">
+                    <i className={logo.class}></i>
+                    <p>{logo.text}</p>
+                </div>
+                )} */}
                 <div className="superiority-item" data-aos-easing="ease-in-sine" data-aos="fade-in" data-aos-delay="500">
                     <i className="fa-solid fa-truck fa-xl"></i>
                     <p>Delivery to PJ/KL (within 50km) Free delivery available*</p>
@@ -57,7 +100,7 @@ export default function Brand() {
 
             <h1>Monthly Bestsellers</h1>
 
-            <div className="products">
+            <div className="products" id="brand2">
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="500">
                     <img src={productItem} alt="pdc" />
                     <h4>Valrhona Caraibe Hazelnut Praline from RM115.00</h4>
