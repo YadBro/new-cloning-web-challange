@@ -18,7 +18,7 @@ function App() {
     blackblur.classList.remove('black-blur');
   }
   return (
-        <div className='app'>
+        <div className='app' data-testid="app-render-test">
           <div className="side-bar" id='sidebar'>
 
 

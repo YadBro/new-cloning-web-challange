@@ -1,6 +1,7 @@
 // import { useEffect, useState } from "react";
 import TopIMG from "../assets/images/1280x720.jpg";
 import productItem from "../assets/images/300x300.jpg";
+import { ids } from "../test/init";
 
 export default function Brand() {
 
@@ -40,9 +41,9 @@ export default function Brand() {
     // }, 3000)
 
     return(
-        <>
+        <section id="brand" data-testid="brand-render-test">
         <div className="content-header" style={{ position: 'relative' }}>
-            <img src={TopIMG} alt="topimg" className="header-image" data-aos="fade-in" data-aos-delay="600" data-aos-once="true" />
+            <img src={TopIMG} alt="topimg" className="header-image" data-aos="fade-in" data-aos-delay="600" data-aos-once="true" data-testid={ids.image_1280x720_id} />
             <div className="card-header" style={{ position: 'absolute' }} data-aos="fade" data-aos-delay="500" data-aos-once="true">
                 <h4 data-aos="fade-up" data-aos-delay="200" data-aos-mirror="false" data-aos-once="true">NEW FLAVOUR</h4>
                 <p data-aos="fade-up" data-aos-delay="500" data-aos-mirror="false" data-aos-once="true">Uji Matcha Tart</p>
@@ -85,16 +86,16 @@ export default function Brand() {
         <section className="product-section">
             <div className="products">
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="500">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                 </div>
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="700">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                 </div>
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="900">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                 </div>
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="1100">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                 </div>
             </div>
 
@@ -102,25 +103,25 @@ export default function Brand() {
 
             <div className="products" id="brand2">
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="500">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                     <h4>Valrhona Caraibe Hazelnut Praline from RM115.00</h4>
                 </div>
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="700">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                     <p className="info">1 day pre-order</p>
                     <h4>Uji Matcha Tart RM105.00</h4>
                 </div>
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="900">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                     <h4>Citron Tart RM82.00</h4>
                 </div>
                 <div className="product" data-aos-easing="ease-in-sine" data-aos="fade-up" data-aos-delay="1100">
-                    <img src={productItem} alt="pdc" />
+                    <img src={productItem} alt="pdc" data-testid={ids.image_300x300_id}/>
                     <h4>Kochi Yuzu Mango Tart RM120.00</h4>
                 </div>
             </div>
         </section>
 
-        </>
+        </section>
     )
 }

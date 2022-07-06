@@ -1,5 +1,5 @@
 import VecLogo from "../assets/images/30x30.jpg";
-
+import { ids } from "../test/init";
 
 export default function Navbar() {
     const slideHandler = (e) => {
@@ -14,7 +14,7 @@ export default function Navbar() {
         blackblur.classList.toggle('black-blur');
     }
     return(
-        <div className="navbar">
+        <div className="navbar" data-testid="navbar-render-test">
             <header className="upHeader">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit neque odit quisquam exercitationem a voluptas ex ratione veniam iste officia, corrupti aliquid repudiandae veritatis quae facilis?</p>
             </header>
@@ -30,7 +30,7 @@ export default function Navbar() {
                     
 
                     <div className="logo" id="logo">
-                        <img src={VecLogo} alt="logo" />
+                        <img src={VecLogo} alt="logo" data-testid={ids.image_30x30_id} />
                     </div>
 
                     <div className="menu-button">
@@ -38,7 +38,7 @@ export default function Navbar() {
                         <p className="profile"><i className="fa-regular fa-user"></i></p>
                         <p><i className="fa-solid fa-cart-shopping"></i> 0</p>
                         <div className='question'>
-                            <i class="fa-regular fa-circle-question fa-2xl"></i>
+                            <i className="fa-regular fa-circle-question fa-2xl"></i>
                         </div>
                     </div>
                 </div>
